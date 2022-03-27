@@ -1,4 +1,10 @@
-import { AppShell } from '@mantine/core';
+import {
+  AppShell,
+  Center,
+  Text,
+  TypographyStylesProvider,
+} from '@mantine/core';
+import FileDropzone from './components/FileDropzone';
 import Header from './components/Header';
 
 function App() {
@@ -16,7 +22,24 @@ function App() {
         },
       })}
     >
-      <h1>Hi, Mom</h1>
+      <Center>
+        <Text lineClamp={3} align="center">
+          <TypographyStylesProvider>
+            <h1>Welcome to Metatics.</h1>
+            <p>Find the hidden information of pictures.</p>
+          </TypographyStylesProvider>
+        </Text>
+      </Center>
+      <Center>
+        <div
+          style={{
+            maxWidth: 1000,
+            flexGrow: 1,
+          }}
+        >
+          <FileDropzone />
+        </div>
+      </Center>
     </AppShell>
   );
 }

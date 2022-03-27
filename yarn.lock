@@ -1460,6 +1460,13 @@
     react-popper "^2.2.5"
     react-textarea-autosize "^8.3.2"
 
+"@mantine/dropzone@^4.0.8":
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/@mantine/dropzone/-/dropzone-4.0.8.tgz#62f7b0f9b027b86532b752e6ec9ffff1b8eb921a"
+  integrity sha512-SKBMs/nsXto4GRcdNOseiMMqYcAdVOQPhPdb7M4jWwWCYW3NZD26fwxD35Wkrqxr7q9BqEs60tgMTgzqM8hjRg==
+  dependencies:
+    react-dropzone "^11.4.2"
+
 "@mantine/hooks@^4.0.8":
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-4.0.8.tgz#4b3c62e8a136de45fafbda8c3845dbdd63860d11"
@@ -2639,6 +2646,11 @@ atob@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
+
+attr-accept@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/attr-accept/-/attr-accept-2.2.2.tgz#646613809660110749e92f2c10833b70968d929b"
+  integrity sha512-7prDjvt9HmqiZ0cl5CRjtS84sEyhsHP2coDkaZKRKVfCDo9s7iw7ChVmar78Gu9pC4SoR/28wFu/G5JJhTnqEg==
 
 autoprefixer@^10.4.4:
   version "10.4.4"
@@ -4361,6 +4373,13 @@ file-loader@^6.2.0:
   dependencies:
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"
+
+file-selector@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/file-selector/-/file-selector-0.4.0.tgz#59ec4f27aa5baf0841e9c6385c8386bef4d18b17"
+  integrity sha512-iACCiXeMYOvZqlF1kTiYINzgepRBymz1wwjiuup9u9nayhb6g4fSwiyJ/6adli+EPwrWtpgQAh2PoS7HukEGEg==
+  dependencies:
+    tslib "^2.0.3"
 
 filelist@^1.0.1:
   version "1.0.2"
@@ -7254,6 +7273,15 @@ react-dom@^17.0.2:
     object-assign "^4.1.1"
     scheduler "^0.20.2"
 
+react-dropzone@^11.4.2:
+  version "11.7.1"
+  resolved "https://registry.yarnpkg.com/react-dropzone/-/react-dropzone-11.7.1.tgz#3851bb75b26af0bf1b17ce1449fd980e643b9356"
+  integrity sha512-zxCMwhfPy1olUEbw3FLNPLhAm/HnaYH5aELIEglRbqabizKAdHs0h+WuyOpmA+v1JXn0++fpQDdNfUagWt5hJQ==
+  dependencies:
+    attr-accept "^2.2.2"
+    file-selector "^0.4.0"
+    prop-types "^15.8.1"
+
 react-error-overlay@^6.0.10:
   version "6.0.10"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.10.tgz#0fe26db4fa85d9dbb8624729580e90e7159a59a6"
@@ -8167,6 +8195,11 @@ symbol-tree@^3.2.4:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/symbol-tree/-/symbol-tree-3.2.4.tgz#430637d248ba77e078883951fb9aa0eed7c63fa2"
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
+
+tabler-icons-react@^1.41.0:
+  version "1.41.0"
+  resolved "https://registry.yarnpkg.com/tabler-icons-react/-/tabler-icons-react-1.41.0.tgz#e6c7df60b30ffe4ab7701818deaa9d8fe550822f"
+  integrity sha512-A/ESVwCfPuH1hAgoaLJV3Kl+eTS3TbJLP1H+w4ztMajjHkQJIrMPJt6JJq3VlB1f86F7UgBw2PxlT7gfcjmTXA==
 
 tailwindcss@^3.0.2:
   version "3.0.23"
