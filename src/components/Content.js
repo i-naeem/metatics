@@ -8,22 +8,23 @@ const useStyles = createStyles((theme) => ({
     marginBottom: theme.spacing.sm,
     borderRadius: theme.radius.sm,
   },
+
+  imageCol: {
+    border: '1px solid black',
+    borderRadius: theme.radius.sm,
+  },
 }));
 
-const Content = ({ information = [] }) => {
+const Content = ({ information = [], img }) => {
   const { classes } = useStyles();
   return (
     <section>
-      <Grid p="sm" align="flex-start">
-        <Grid.Col span={2} style={{ backgroundColor: 'red' }}>
-          <Image
-            src="https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/11/hfpqyV7B-IMG-Dubai-UAE.jpg"
-            alt="Sample"
-            fit
-          />
+      <Grid p="sm" align="flex-end">
+        <Grid.Col span={2} className={classes.imageCol}>
+          <Image src={img} alt="Searched image preview" />
         </Grid.Col>
         <Grid.Col span={10}>
-          <Text my="md" lineClamp={4}>
+          <Text>
             <Title>Meta information of your file</Title>
             <p>
               The data below is all the metadata we could automatically extract

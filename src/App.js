@@ -7,7 +7,7 @@ import useParse from './hooks/useParse';
 
 function App() {
   const [file, setFile] = useState(null);
-  const { loading, error, info } = useParse(file);
+  const { loading, error, info, previewUrl } = useParse(file);
 
   if (error) {
     console.log(error);
@@ -28,7 +28,7 @@ function App() {
     >
       {error && <h1>Failed to parse the file</h1>}
       <Home loading={loading} onDrop={(file) => setFile(file)} />
-      {info && <Content information={info} />}
+      {info && <Content information={info} img={previewUrl} />}
     </AppShell>
   );
 }
