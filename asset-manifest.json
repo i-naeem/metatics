@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/metatics/static/js/main.2d0525e1.js",
+    "main.js": "/metatics/static/js/main.73fb1900.js",
     "index.html": "/metatics/index.html",
-    "main.2d0525e1.js.map": "/metatics/static/js/main.2d0525e1.js.map"
+    "main.73fb1900.js.map": "/metatics/static/js/main.73fb1900.js.map"
   },
   "entrypoints": [
-    "static/js/main.2d0525e1.js"
+    "static/js/main.73fb1900.js"
   ]
 }
