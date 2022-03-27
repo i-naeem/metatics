@@ -23,7 +23,7 @@ Find the hidden meta data of your images.
 
 ## About The Project
 
-![Metatics Demo Picture](/demo.png)
+![Metatics Demo Picture](/demo.jpg)
 
 An online exif data reader that can show you all these hidden information. Metatics uses [Exifr](https://github.com/MikeKovarik/exifr) library which is blazingly fast and finds almost all the hidden information of a photo.
 
