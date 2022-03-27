@@ -1,9 +1,9 @@
 import { Center, Text, TypographyStylesProvider } from '@mantine/core';
 import FileDropzone from './FileDropzone';
 
-const Home = (props) => {
+const Home = ({ onDrop }) => {
   return (
-    <section>
+    <section style={{ paddingBottom: '1rem' }}>
       <Center>
         <Text lineClamp={3} align="center">
           <TypographyStylesProvider>
@@ -19,7 +19,7 @@ const Home = (props) => {
             flexGrow: 1,
           }}
         >
-          <FileDropzone />
+          <FileDropzone onDrop={onDrop} />
         </div>
       </Center>
     </section>

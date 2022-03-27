@@ -51,18 +51,18 @@ export const dropzoneChildren = (status, theme) => (
   </Group>
 );
 
-export default function FileDropzone(props) {
+export default function FileDropzone({ onDrop, ...rest }) {
   const theme = useMantineTheme();
   useHotkeys([['ctrl+shift+o', () => console.log('Open Dropzone')]]);
 
   return (
     <Dropzone
-      onDrop={(files) => console.log('accepted files', files)}
+      onDrop={(files) => onDrop(files[0])}
       onReject={(files) => console.log('rejected files', files)}
       // maxSize={3 * 1024 ** 2} Do not allow file larger than 5mb
       accept={IMAGE_MIME_TYPE}
       radius="md"
-      {...props}
+      {...rest}
     >
       {(status) => dropzoneChildren(status, theme)}
     </Dropzone>

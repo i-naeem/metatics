@@ -2,9 +2,16 @@ import Content from './components/Content';
 import { AppShell } from '@mantine/core';
 import Header from './components/Header';
 import Home from './components/Home';
-import React from 'react';
+import React, { useState } from 'react';
+import useParse from './hooks/useParse';
 
 function App() {
+  const [file, setFile] = useState(null);
+  const { loading, error, info } = useParse(file);
+
+  if (error) {
+    console.log(error);
+  }
   return (
     <AppShell
       padding="sm"
@@ -19,8 +26,9 @@ function App() {
         },
       })}
     >
-      <Home />
-      {false && <Content />}
+      {error && <h1>Failed to parse the file</h1>}
+      <Home loading={loading} onDrop={(file) => setFile(file)} />
+      {info && <Content information={info} />}
     </AppShell>
   );
 }
