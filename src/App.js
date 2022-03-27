@@ -1,8 +1,8 @@
 import {
+  TypographyStylesProvider,
   AppShell,
   Center,
   Text,
-  TypographyStylesProvider,
 } from '@mantine/core';
 import FileDropzone from './components/FileDropzone';
 import Header from './components/Header';
