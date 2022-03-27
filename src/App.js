@@ -20,7 +20,7 @@ function App() {
       })}
     >
       <Home />
-      <Content />
+      {false && <Content />}
     </AppShell>
   );
 }
