@@ -1,5 +1,6 @@
-import { Group, Text, useMantineTheme } from '@mantine/core';
+import { Group, Text, useMantineTheme, Kbd } from '@mantine/core';
 import { Dropzone, IMAGE_MIME_TYPE } from '@mantine/dropzone';
+import { useHotkeys } from '@mantine/hooks';
 import { Upload, Photo, X } from 'tabler-icons-react';
 
 function getIconColor(status, theme) {
@@ -38,7 +39,10 @@ export const dropzoneChildren = (status, theme) => (
 
     <div>
       <Text size="xl" inline>
-        Drag images here or click to select files
+        Drag images here or click to select files or press{' '}
+        <span>
+          <Kbd> Ctrl</Kbd> + <Kbd>shift</Kbd> + <Kbd>O</Kbd>
+        </span>
       </Text>
       <Text size="sm" color="dimmed" inline mt={7}>
         Attach the file to find the hidden meta information.
@@ -49,6 +53,8 @@ export const dropzoneChildren = (status, theme) => (
 
 export default function FileDropzone(props) {
   const theme = useMantineTheme();
+  useHotkeys([['ctrl+shift+o', () => console.log('Open Dropzone')]]);
+
   return (
     <Dropzone
       onDrop={(files) => console.log('accepted files', files)}
