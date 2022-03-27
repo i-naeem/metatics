@@ -1,6 +1,8 @@
+import Content from './components/Content';
 import { AppShell } from '@mantine/core';
 import Header from './components/Header';
 import Home from './components/Home';
+import React from 'react';
 
 function App() {
   return (
@@ -9,7 +11,7 @@ function App() {
       header={<Header />}
       styles={(theme) => ({
         main: {
-          height: 'calc(100vh - 60px)',
+          minHeight: 'calc(100vh - 60px)',
           backgroundColor:
             theme.colorScheme === 'dark'
               ? theme.colors.dark[8]
@@ -18,6 +20,7 @@ function App() {
       })}
     >
       <Home />
+      <Content />
     </AppShell>
   );
 }
