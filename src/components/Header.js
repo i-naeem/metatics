@@ -1,4 +1,11 @@
-import { Container, Header as MantineHeader, Text, Title } from '@mantine/core';
+import {
+  Container,
+  Header as MantineHeader,
+  Text,
+  Title,
+  ActionIcon,
+} from '@mantine/core';
+import { BrandGithub } from 'tabler-icons-react';
 const Header = (props) => {
   return (
     <MantineHeader height={60} p="xs">
@@ -7,6 +14,7 @@ const Header = (props) => {
           height: '100%',
           display: 'flex',
           alignItems: 'center',
+          justifyContent: 'space-between',
         })}
       >
         <Text
@@ -19,6 +27,17 @@ const Header = (props) => {
         >
           <Title>Metatics</Title>
         </Text>
+
+        <ActionIcon
+          component="a"
+          href="https://github.com/i-naeem/metatics"
+          variant="none"
+          target="_blank"
+          color="primary"
+          title="Github link to repo"
+        >
+          <BrandGithub size={28} />
+        </ActionIcon>
       </Container>
     </MantineHeader>
   );
